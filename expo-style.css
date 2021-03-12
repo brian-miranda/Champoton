@@ -213,17 +213,34 @@ a.caption {
 
 /* ----------------------- PARALLAX ----------------------- */
 .parallax {
-  /* The image used */
-  background-image: url("work/models/memorica/recursos/img/champoton/splash-complete.jpg");
-
   /* Set a specific height */
-  min-height: 600px;
+  min-height: 700px;
 
-  /* Create the parallax scrolling effect
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+}
+
+.cover {
+  background-image: url("work/models/memorica/recursos/img/champoton/splash-background.jpg");
+}
+
+.first {
+  background-image: url("work/models/memorica/recursos/img/champoton/sala1.jpg");
+}
+
+.second {
+  background-image: url("work/models/memorica/recursos/img/champoton/sala2.jpg");
+}
+
+.third {
+  background-image: url("work/models/memorica/recursos/img/champoton/sala3.jpg");
+}
+
+.last {
+  background-image: url("work/models/memorica/recursos/img/champoton/splash-background.jpg");
 }
 
 /* ----------------------- SALAS ----------------------- */

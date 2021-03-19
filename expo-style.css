@@ -55,12 +55,31 @@ p, li {
   text-align: justify;
 }
 
+a {
+  color: #FFF;
+  line-height: 1.3rem;
+}
+
 a.caption {
   font-family: "Bodoni";
   font-style: italic;
   text-align: center;
   color: #FFF;
   margin-top: 1rem;
+}
+
+#loader {
+  z-index: 5;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  margin: 0;
+}
+
+#loader h1 {
+  color: #FFF;
 }
 
 /* ----------------------- MENU ----------------------- */
@@ -164,7 +183,7 @@ a.caption {
 .overlay nav {
   position: relative;
   height: 70%;
-  top: 45%;
+  top: 55%;
   transform: translateY(-50%);
   font-size: 50px;
   font-weight: 400;
@@ -183,7 +202,7 @@ a.caption {
 .overlay ul li {
   display: block;
   height: 4%;
-  min-height: 50px;
+  min-height: 60px;
   position: relative;
   opacity: 0;
 }
@@ -213,10 +232,7 @@ a.caption {
 
 /* ----------------------- PARALLAX ----------------------- */
 .parallax {
-  /* Set a specific height */
   min-height: 700px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -246,4 +262,261 @@ a.caption {
 /* ----------------------- SALAS ----------------------- */
 .go-to img {
   max-height: 500px;
+}
+
+/* ----------------------- CREDITEA ----------------------- */
+.centered-list, .centered-list ul, .centered-list li {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* ----------------------- MEDIA QUERIES ----------------------- */
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: #FFF;
+    line-height: 1.3rem;
+  }
+
+  a.caption {
+    margin-top: 1rem;
+  }
+
+  .mini {
+    width: 7%;
+  }
+
+  .parallax {
+    min-height: 500px;
+  }
+
+  .overlay nav {
+    height: 40%;
+    top: 50%;
+  }
+
+  .overlay ul li {
+    height: 10%;
+    min-height: 50px;
+  }
+}
+
+/* Large devices (desktops and large tablets) */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 19px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: #FFF;
+    line-height: 1.3rem;
+  }
+
+  a.caption {
+    margin-top: 1rem;
+  }
+
+  .mini {
+    width: 9.5%;
+  }
+
+  .parallax {
+    min-height: 500px;
+  }
+
+  .overlay nav {
+    height: 40%;
+    top: 50%;
+  }
+
+  .overlay ul li {
+    height: 10%;
+    min-height: 50px;
+  }
+}
+
+/* Medium devices (small tablets, and landscape phones maybe?) */
+@media only screen and (min-width: 551px) and (max-width: 736px)  {
+  html {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.3rem;
+  }
+
+  a {
+    color: #FFF;
+    line-height: 1.3rem;
+  }
+
+  a.caption {
+    margin-top: 1rem;
+  }
+
+  .mini {
+    width: 12.5%;
+  }
+
+  .parallax {
+    min-height: 300px;
+  }
+
+  .overlay nav {
+    height: 40%;
+    top: 40%;
+  }
+
+  .overlay ul li {
+    height: 4%;
+    min-height: 40px;
+  }
+}
+
+/* Small devices (most smartphones and smartphone sized devices) */
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1.3rem;
+  }
+
+  a {
+    color: #FFF;
+    line-height: 1.3rem;
+  }
+
+  a.caption {
+    margin-top: 1rem;
+  }
+
+  .mini {
+    width: 23%;
+  }
+
+  .parallax {
+    min-height: 200px;
+  }
+
+  .overlay nav {
+    height: 40%;
+    top: 45%;
+  }
+
+  .overlay ul li {
+    height: 4%;
+    min-height: 50px;
+  }
+}
+
+/* Extra small devices (cellular telephones, 10px and up) */
+@media only screen and (max-width: 321px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  a {
+    color: #FFF;
+    line-height: 1.3rem;
+  }
+
+  a.caption {
+    margin-top: 1rem;
+  }
+
+  .mini {
+    width: 30%;
+  }
+
+  .parallax {
+    min-height: 200px;
+  }
+
+  .overlay nav {
+    height: 70%;
+    top: 55%;
+  }
+
+  .overlay ul li {
+    min-height: 50px;
+  }
 }

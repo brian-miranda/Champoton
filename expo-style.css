@@ -49,7 +49,7 @@ h5 {
   font-size: 2em;
 }
 
-p, li {
+p, li, ul {
   color: #FFF;
   font-family: "Bodoni";
   text-align: justify;

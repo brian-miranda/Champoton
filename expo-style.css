@@ -521,10 +521,6 @@ a.caption, p.caption {
     width: 30%;
   }
 
-  .parallax {
-    min-height: 200px;
-  }
-
   .overlay nav {
     height: 70%;
     top: 55%;
@@ -534,23 +530,36 @@ a.caption, p.caption {
     min-height: 50px;
   }
 
+  .parallax {
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .cover {
     background-image: url("work/models/memorica/recursos/img/champoton/splash-background-sm.jpg");
+    background-attachment: inherit;
   }
 
   .first {
     background-image: url("work/models/memorica/recursos/img/champoton/sala1-sm.jpg");
+    background-attachment: inherit;
   }
 
   .second {
     background-image: url("work/models/memorica/recursos/img/champoton/sala2-sm.jpg");
+    background-attachment: inherit;
   }
 
   .third {
     background-image: url("work/models/memorica/recursos/img/champoton/sala3-sm.jpg");
+    background-attachment: inherit;
   }
 
   .last {
     background-image: url("work/models/memorica/recursos/img/champoton/creditos-sm.jpg");
+    background-attachment: inherit;
   }
 }

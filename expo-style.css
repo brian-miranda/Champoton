@@ -63,7 +63,6 @@ a {
 
 a.caption, p.caption {
   font-family: "Bodoni";
-  font-style: italic;
   text-align: center;
   color: #FFF;
   margin-top: 1rem;
@@ -82,6 +81,13 @@ a.caption, p.caption {
 
 #loader h1 {
   color: #FFF;
+}
+
+a.pop-over {
+  color: #000 !important;
+  background-color: #FFF;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* ----------------------- MENU ----------------------- */

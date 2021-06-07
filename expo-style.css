@@ -13,6 +13,13 @@
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+@font-face {
+  font-family: "GMX";
+  src: url(work/models/memorica/recursos/Type/GMX) format("truetype");
+  font-style: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 /* ----------------------- GENERAL ----------------------- */
 html {
   font-size: 24px;
@@ -51,7 +58,7 @@ h5 {
 
 p, li, ul {
   color: #FFF;
-  font-family: "Bodoni";
+  font-family: "GMX";
   text-align: justify;
   word-wrap: break-word;
 }
@@ -62,7 +69,7 @@ a {
 }
 
 a.caption, p.caption {
-  font-family: "Bodoni";
+  font-family: "GMX";
   text-align: center;
   color: #FFF;
   margin-top: 1rem;
@@ -103,7 +110,7 @@ a.pop-over {
 
 .button-facebook, .button-twitter {
   color: #000;
-  font-family: "Bodoni";
+  font-family: "GMX";
   font-size: 1rem;
 }
 
